@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>Water Captains 2027 · Luca Lombardo y Elisa Cadoppi</title>
+<meta name="description" content="Propuestas de Luca Lombardo y Elisa Cadoppi para Captains de Water 2027. Conocenos y proponé tu idea.">
+<meta property="og:title" content="Water Captains 2027 · Luca Lombardo y Elisa Cadoppi">
+<meta property="og:description" content="Nuestras propuestas para Water 2027 y un lugar para sumar las tuyas.">
+<meta name="theme-color" content="#8FD3F4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--sky:#8FD3F4;--sky2:#C4E9FA;--sky3:#E4F5FD;--navy:#0A2342;--sun:#FFD23F;--blue:#2E86C1}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Montserrat,system-ui,sans-serif;color:var(--navy);background:var(--sky3);line-height:1.5;-webkit-text-size-adjust:100%}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.display{font-family:Anton,Impact,'Haettenschweiler','Arial Narrow',sans-serif;text-transform:uppercase;line-height:.95;font-weight:400}
+.tag{display:inline-block;background:var(--navy);color:#fff;font-weight:800;font-size:.8rem;letter-spacing:.2em;padding:.6em 1.2em;border-radius:50px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;background:var(--sun);color:var(--navy);font-weight:800;text-decoration:none;padding:.9em 1.5em;border-radius:14px;border:3px solid var(--navy);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:#fff}
+/* hero */
+.hero{background:linear-gradient(180deg,var(--sky),var(--sky2));padding:36px 0 0;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(3.6rem,17vw,9.5rem);margin:22px 0 14px}
+.hero p.lead{font-size:clamp(1.05rem,3.2vw,1.5rem);font-weight:800;max-width:560px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 36px}
+.hero-grid{display:grid;gap:20px;align-items:end}
+@media(min-width:760px){.hero-grid{grid-template-columns:1fr auto}.photo{width:340px}}
+.photo{aspect-ratio:1/1;border-radius:50%;background:radial-gradient(circle,#fff 0%,var(--sky3) 70%);border:8px solid #fff;overflow:hidden;max-width:380px;width:100%;justify-self:center;margin-bottom:-60px;position:relative;z-index:2}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.wave{display:block;width:100%;height:auto;margin-top:-1px}
+/* sections */
+section{padding:56px 0}
+h2{font-size:clamp(2.2rem,8vw,3.6rem);margin-bottom:10px}
+.kicker{font-weight:800;letter-spacing:.15em;font-size:.8rem;color:var(--navy);opacity:.75;margin-bottom:6px;text-transform:uppercase}
+.sub{font-weight:600;max-width:620px;margin-bottom:28px}
+.cards{display:grid;gap:18px}
+@media(min-width:760px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:#fff;border:4px solid var(--navy);border-radius:22px;padding:24px}
+.card .n{font-family:Anton,Impact,'Arial Narrow',sans-serif;font-size:3rem;color:var(--blue);line-height:1}
+.card h3{font-family:Anton,Impact,'Arial Narrow',sans-serif;text-transform:uppercase;font-weight:400;font-size:1.8rem;line-height:1.05;margin:6px 0 10px}
+.card p{font-weight:600}
+.pill{display:inline-block;background:var(--sun);border-radius:10px;padding:.2em .7em;font-weight:800;margin-top:10px}
+/* form */
+.formsec{background:none}
+.formbox{background:#fff;border:4px solid var(--navy);border-radius:22px;overflow:hidden}
+.formbox iframe{width:100%;height:900px;border:0;display:block}
+.pending{padding:40px 24px;text-align:center;font-weight:800}
+.alt-link{margin-top:14px;font-weight:700}
+/* vote */
+.vote{background:var(--navy);color:#fff;text-align:center}
+.vote .check{display:inline-flex;align-items:center;gap:16px;background:#fff;color:var(--navy);border-radius:16px;padding:14px 24px;margin:18px 0}
+.vote .box{width:54px;height:54px;border:4px solid var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center;background:#fff}
+.vote .box svg{width:40px;height:40px}
+.vote .names{font-family:Anton,Impact,'Arial Narrow',sans-serif;font-size:clamp(2rem,8vw,3.2rem);text-transform:uppercase}
+.vote .duo{width:min(100%,380px);aspect-ratio:1/1;margin:0 auto;border:5px solid #fff;border-radius:24px;overflow:hidden;background:var(--sky3)}
+.vote .duo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.vote .date{background:var(--sun);color:var(--navy);display:inline-block;font-weight:800;padding:.6em 1.2em;border-radius:14px;margin-top:6px}
+.share{margin-top:22px}
+footer{background:#06182d;color:#9db8d0;font-size:.85rem;text-align:center;padding:22px 20px;font-weight:600}
+
+/* animación y extras */
+@-webkit-keyframes drift{from{-webkit-transform:translate3d(0,0,0)}to{-webkit-transform:translate3d(-50%,0,0)}}
+@keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+.waves{position:relative;height:90px;overflow:hidden;margin-top:-1px}
+.waves svg{position:absolute;left:0;bottom:0;width:200%;height:100%;animation:drift 14s linear infinite}
+.waves svg.b{opacity:.55;animation-duration:22s;animation-direction:reverse}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+.card{transition:transform .2s}.card:hover{transform:rotate(-1.2deg) translateY(-4px)}
+
+
+
+
+
+
+
+
+
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;text-align:center;box-shadow:0 8px 24px rgba(10,35,66,.35);transform:translateY(140%);transition:transform .3s}
+.sticky.show{transform:none}
+@media(min-width:760px){.sticky{display:none}}
+@media(prefers-reduced-motion:reduce){.waves svg{animation:none}.rv{opacity:1;transform:none;transition:none}}
+
+/* océano de fondo */
+@-webkit-keyframes bob{0%,100%{-webkit-transform:translate3d(0,0,0)}50%{-webkit-transform:translate3d(0,14px,0)}}
+@keyframes bob{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,14px,0)}}
+.ocean{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;z-index:-1;-webkit-transform:translateZ(0);transform:translateZ(0);overflow:hidden;background:linear-gradient(180deg,#9ADBF7 0%,#7CCBF0 45%,#5DB0E0 100%)}
+.ocean .lyr{position:absolute;left:0;width:100%;height:95%;animation:bob 7s ease-in-out infinite}
+.ocean .lyr svg{position:absolute;left:0;top:0;width:200%;height:100%;animation:drift linear infinite}
+.ocean .l1{top:12%}.ocean .l1 svg{animation-duration:46s}
+.ocean .l2{top:34%;animation-delay:-2s}.ocean .l2 svg{animation-duration:34s;animation-direction:reverse}
+.ocean .l3{top:56%;animation-delay:-4s}.ocean .l3 svg{animation-duration:26s}
+.ocean .l4{top:76%;animation-delay:-1s}.ocean .l4 svg{animation-duration:20s;animation-direction:reverse}
+body{background:transparent}html{background:#7CCBF0}
+.hero{background:none}
+.tagl{display:inline-block;background:var(--navy);color:#fff;font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:.4em .9em;border-radius:50px;margin-bottom:8px}
+.who{display:grid;gap:18px}
+@media(min-width:760px){.who{grid-template-columns:1fr 1fr}}
+.pers{background:#fff;border:4px solid var(--navy);border-radius:22px;padding:24px;text-align:center}
+.pers .ph{position:relative;width:150px;height:150px;border-radius:50%;background:var(--sky3);border:6px dashed #9cc7dd;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#7aa8c2;font-size:.8rem;letter-spacing:.1em;overflow:hidden}
+.pers .ph.has{border:6px solid var(--navy)}
+.pers .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pers h3{font-family:Anton,Impact,'Arial Narrow',sans-serif;text-transform:uppercase;font-weight:400;font-size:1.8rem;line-height:1.05}
+.pers p{font-weight:700;color:#5b86a3;margin-top:8px}
+.hero h1.t1{font-size:clamp(1.9rem,8vw,3.4rem);margin:22px 0 6px}
+.hero h2.t2{font-size:clamp(2.6rem,12vw,5.4rem);margin:0 0 14px}
+.hero h2.t2 span{display:block}
+@media(prefers-reduced-motion:reduce){.ocean .lyr,.ocean .lyr svg{animation:none}}
+.cards{grid-template-columns:1fr}
+@media(min-width:760px){.cards{grid-template-columns:repeat(2,1fr)}}
+.btn.ghost{background:rgba(255,255,255,.4);border:2px solid var(--navy);padding:.7em 1.1em;font-size:.9rem;font-weight:700}
+.btn.ghost:hover{background:#fff}
+.pers .ph.has{border-style:solid}
+.card p.small{font-size:.82rem;font-weight:600;margin-top:8px;opacity:.85}
+
+.formbox{padding:24px}
+.fl{display:block;font-weight:800;margin:0 0 8px}
+.fl .req{color:#c0392b}
+#ideaForm textarea,#ideaForm input[type=text]{width:100%;font:600 1rem Montserrat,sans-serif;color:var(--navy);background:var(--sky3);border:3px solid var(--navy);border-radius:14px;padding:.8em 1em;margin-bottom:18px;resize:vertical}
+#ideaForm textarea:focus,#ideaForm input[type=text]:focus{outline:3px solid var(--sun)}
+.opts{display:grid;gap:10px;margin-bottom:18px}
+.op{display:block;cursor:pointer}
+.op input{position:absolute;opacity:0;pointer-events:none}
+.op span{display:block;font-weight:700;border:3px solid var(--navy);border-radius:14px;padding:.8em 1em;background:#fff;transition:background .15s}
+.op:hover span{background:var(--sky3)}
+.op input:checked+span{background:var(--sun)}
+.op input:focus-visible+span{outline:3px solid var(--blue)}
+#ideaForm .btn{width:100%;font-size:1.05rem;cursor:pointer;font-family:Montserrat,sans-serif}
+#ideaForm .btn[disabled]{opacity:.6;cursor:wait}
+.err{color:#b03a2e;font-weight:800;margin:-8px 0 14px}
+.ok{background:var(--sun);border:3px solid var(--navy);border-radius:14px;padding:1em;font-weight:800;margin-top:16px;text-align:center}
+#ideaForm .err#fail{margin:14px 0 0}
+
+/* iPhone / iOS Safari */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+body{overflow-x:hidden;padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+.ocean .lyr svg{will-change:transform;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.btn,.op span,#ideaForm textarea,#ideaForm input[type=text]{-webkit-appearance:none;appearance:none;touch-action:manipulation}
+.btn{min-height:44px}
+.op{position:relative}
+.op span{min-height:48px}
+#ideaForm textarea,#ideaForm input[type=text]{font-size:16px;-webkit-border-radius:14px}
+.sticky{bottom:calc(12px + env(safe-area-inset-bottom));-webkit-transform:translate3d(0,160%,0);transform:translate3d(0,160%,0)}
+.sticky.show{-webkit-transform:none;transform:none}
+footer{padding-bottom:calc(22px + env(safe-area-inset-bottom))}
+.card,.pers,.formbox{-webkit-transform:translateZ(0)}
+@media(hover:none){.btn:hover{transform:none}.btn.ghost:hover{background:rgba(255,255,255,.4)}.op:hover span{background:#fff}.card:hover{transform:none}}
+@media(max-width:380px){.wrap{padding:0 16px}.card,.pers{padding:20px}.formbox{padding:18px}.btn.ghost{font-size:.85rem}}
+@media(max-width:600px){.ocean .l1{display:none}}
+
+.pers .ph{width:200px;height:200px;margin-bottom:18px}
+.pers .ph.has{border:5px solid var(--navy);background:var(--sky3)}
+.pers .ph img{object-position:50% 40%}
+.pers p.bio{color:var(--navy);font-weight:600;font-size:.98rem;text-align:left;margin-top:12px;line-height:1.55}
+@media(max-width:380px){.pers .ph{width:170px;height:170px}}
+</style>
+</head>
+<body>
+<div class="ocean" aria-hidden="true"><div class="lyr l1"><svg viewBox="0 0 2880 400" preserveAspectRatio="none"><path d="M0 60 C180 26 360 94 540 60 S900 26 1080 60 S1260 94 1440 60 C1620 26 1800 94 1980 60 S2340 26 2520 60 S2700 94 2880 60 V400 H0Z" fill="#ffffff" fill-opacity=".22"/><path d="M0 60 C180 26 360 94 540 60 S900 26 1080 60 S1260 94 1440 60 C1620 26 1800 94 1980 60 S2340 26 2520 60 S2700 94 2880 60" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="6"/></svg></div><div class="lyr l2"><svg viewBox="0 0 2880 400" preserveAspectRatio="none"><path d="M0 60 C180 16 360 104 540 60 S900 16 1080 60 S1260 104 1440 60 C1620 16 1800 104 1980 60 S2340 16 2520 60 S2700 104 2880 60 V400 H0Z" fill="#B8E4F8" fill-opacity=".35"/><path d="M0 60 C180 16 360 104 540 60 S900 16 1080 60 S1260 104 1440 60 C1620 16 1800 104 1980 60 S2340 16 2520 60 S2700 104 2880 60" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="6"/></svg></div><div class="lyr l3"><svg viewBox="0 0 2880 400" preserveAspectRatio="none"><path d="M0 60 C180 20 360 100 540 60 S900 20 1080 60 S1260 100 1440 60 C1620 20 1800 100 1980 60 S2340 20 2520 60 S2700 100 2880 60 V400 H0Z" fill="#4FA6D8" fill-opacity=".5"/><path d="M0 60 C180 20 360 100 540 60 S900 20 1080 60 S1260 100 1440 60 C1620 20 1800 100 1980 60 S2340 20 2520 60 S2700 100 2880 60" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="6"/></svg></div><div class="lyr l4"><svg viewBox="0 0 2880 400" preserveAspectRatio="none"><path d="M0 60 C180 14 360 106 540 60 S900 14 1080 60 S1260 106 1440 60 C1620 14 1800 106 1980 60 S2340 14 2520 60 S2700 106 2880 60 V400 H0Z" fill="#2E86C1" fill-opacity=".6"/><path d="M0 60 C180 14 360 106 540 60 S900 14 1080 60 S1260 106 1440 60 C1620 14 1800 106 1980 60 S2340 14 2520 60 S2700 106 2880 60" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="6"/></svg></div></div>
+<header class="hero">
+  <div class="wrap">
+    
+    <div class="hero-grid">
+      <div>
+        <h1 class="display t1">Water Captains 2027</h1>
+        <h2 class="display t2"><span>Luca Lombardo</span><span>y Elisa Cadoppi</span></h2>
+        <p class="lead">Votá a los capitanes que hacen que pase.</p>
+        <div class="cta">
+          <a class="btn ghost" href="#propuestas">Ver propuestas</a>
+          <a class="btn ghost" href="#quienes">¿Quiénes somos?</a>
+          <a class="btn ghost" href="#idea">Proponé tu idea</a>
+          <a class="btn ghost" href="https://www.instagram.com/watercaptains_2027?mdxt=cWE0MTJuMTRla2ll" target="_blank" rel="noopener">Instagram Water Captains 2027</a>
+        </div>
+      </div>
+      <div class="photo" id="photo"><img src="img/dupla.jpg" alt="Luca y Eli con la remera de Water" onerror="this.parentNode.style.display='none'"></div>
+    </div>
+  </div>
+  </header>
+
+<section id="propuestas">
+  <div class="wrap">
+    <div class="kicker">Lo que vamos a hacer</div>
+    <h2 class="display">Nuestras propuestas</h2>
+    <p class="sub">Siete ideas para que Water se viva más todo el año.</p>
+    <div class="cards">
+      <article class="card rv"><div class="n">01</div><h3>Recreos con torneos</h3><p>Fútbol, metegol y ping pong en los recreos. Vos elegís cuál arrancamos primero.</p></article>
+      <article class="card rv"><div class="n">02</div><h3>Más casual days</h3><p>Más días para ir cómodos durante el año.</p><span class="pill">Todas las donaciones recaudadas van a PAAS</span></article>
+      <article class="card rv"><div class="n">03</div><h3>Salidas que elegís vos</h3><p>Decidimos entre todos adónde ir con tu camada.</p></article>
+      <article class="card rv"><div class="n">04</div><h3>Cambio del código de vestimenta</h3><p>El uso habilitado de <u>ropa deportiva con la de gala</u>.</p><p class="small">La ropa puede variar según la estación del año (shorts para los varones en verano y pantalones largos de deporte en invierno para las mujeres).</p></article>
+      <article class="card rv"><div class="n">05</div><h3>Kioscos en Northfest y Sports</h3><p>Cada camada arma puestos de comida y productos durante estas actividades especiales.</p></article>
+      <article class="card rv"><div class="n">06</div><h3>Hora de estudio</h3><p>Una hora al mes, en horario de clases, para que cada curso estudie y termine trabajos pendientes.</p></article>
+      <article class="card rv"><div class="n">07</div><h3>Beneficios por buen promedio</h3><p>El mejor promedio de cada curso, después de cada entrega de notas, gana beneficios: 15 minutos más de recreo o ir con ropa de casual day.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="quienes">
+  <div class="wrap">
+    <div class="kicker">Conocenos</div>
+    <h2 class="display">¿Quiénes somos?</h2>
+    <div class="who">
+      <article class="pers rv"><div class="ph has"><img src="img/luca.jpg" alt="Luca Lombardo con la remera de Water" width="640" height="640" loading="lazy" decoding="async"></div><h3>Luca Lombardo</h3><p class="bio">Me llamo Luca Lombardo, tengo 17 años y actualmente estoy cursando mi quinto año de secundaria. Mi objetivo en este último año es liderar desde la empatía, impulsando proyectos benéficos y de convivencia que beneficien a toda la comunidad de Northfield, ayudando a cada compañero a crecer día a día.</p></article>
+      <article class="pers rv"><div class="ph has"><img src="img/elisa.jpg" alt="Elisa Cadoppi con la remera de Water" width="640" height="640" loading="lazy" decoding="async"></div><h3>Elisa Cadoppi</h3><p class="bio">Soy Elisa Cadoppi Guimaraens, candidata a capitana de Water. Aporto determinación, adaptabilidad y experiencia liderando grupos. Mi objetivo es potenciar el sentido de pertenencia en Northfield a través del altruismo y el trabajo en equipo, creando un espacio donde cada compañero sume y sea escuchado.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="idea" class="formsec">
+  <div class="wrap">
+    <div class="kicker">Tu turno</div>
+    <h2 class="display">Water se arma entre todos</h2>
+    <p class="sub">Contanos qué querés para Water 2027. Es anónimo y tarda 2 minutos.</p>
+    <div class="formbox" id="formbox">
+      <form id="ideaForm" novalidate>
+        <div class="fl" id="q1l">¿Cuál es tu propuesta preferida? <span class="req">*</span></div>
+        <div class="opts" role="radiogroup" aria-labelledby="q1l">
+          <label class="op"><input type="radio" name="q1" value="1 Recreos con Torneos"><span>Recreos con torneos</span></label>
+          <label class="op"><input type="radio" name="q1" value="2 Más Casual Days"><span>Más casual days</span></label>
+          <label class="op"><input type="radio" name="q1" value="3 Salidas que elegís vos"><span>Salidas que elegís vos</span></label>
+          <label class="op"><input type="radio" name="q1" value="4 Cambio del Código de Vestimenta"><span>Cambio del código de vestimenta</span></label>
+          <label class="op"><input type="radio" name="q1" value="5 Kioscos en Northfest y Sports"><span>Kioscos en Northfest y Sports</span></label>
+          <label class="op"><input type="radio" name="q1" value="6 Hora de estudio"><span>Hora de estudio</span></label>
+          <label class="op"><input type="radio" name="q1" value="7 Beneficios por buen promedio"><span>Beneficios por buen promedio</span></label>
+        </div>
+        <div class="err" id="e0" hidden>Elegí una propuesta para poder enviar.</div>
+        <label class="fl" for="f1">¿Tenés alguna otra propuesta que quisieras proponer?</label>
+        <textarea id="f1" name="entry.1914292716" rows="4"></textarea>
+        <div class="fl" id="q2l">¿Qué aspecto te gustaría ver más seguido en las propuestas?</div>
+        <div class="opts" role="radiogroup" aria-labelledby="q2l">
+          <label class="op"><input type="radio" name="q2" value="Deportes y competiciones"><span>Deportes y competiciones</span></label>
+          <label class="op"><input type="radio" name="q2" value="Artes"><span>Artes</span></label>
+          <label class="op"><input type="radio" name="q2" value="Temas academicos"><span>Temas académicos</span></label>
+          <label class="op"><input type="radio" name="q2" value="PAAS (Proyecto de Acción Aprendizaje y Servicio)"><span>PAAS (Proyecto de Acción Aprendizaje y Servicio)</span></label>
+          <label class="op"><input type="radio" name="q2" value="__other_option__"><span>Otro:</span></label>
+        </div>
+        <input type="text" id="other" placeholder="Escribí acá" hidden>
+        <button class="btn" type="submit" id="send">Enviar</button>
+        <div class="ok" id="ok" hidden>¡Gracias! Tu propuesta fue enviada.</div>
+        <div class="err" id="fail" hidden>No se pudo enviar. Probá de nuevo.</div>
+      </form>
+    </div>
+    <p class="alt-link" id="formalt"></p>
+  </div>
+</section>
+
+<section class="vote" id="votar">
+  <div class="wrap">
+    <div class="duo"><img src="img/dupla.jpg" alt="Luca Lombardo y Elisa Cadoppi con la remera de Water" width="800" height="800" loading="lazy" decoding="async"></div>
+    <div class="check"><div class="box"><svg viewBox="0 0 24 24"><path d="M4 12.5l5.2 5.2L20 6.5" fill="none" stroke="#0A2342" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="names">Luca &amp; Eli</div></div>
+    <div><span class="date" id="fecha"></span></div>
+    <div class="share"><a class="btn" href="https://www.instagram.com/watercaptains_2027?mdxt=cWE0MTJuMTRla2ll" target="_blank" rel="noopener">Instagram Water Captains 2027</a></div>
+  </div>
+</section>
+
+<a class="btn sticky" id="sticky" href="#idea">Proponé tu idea para Water</a>
+<footer>Water se mueve · Luca Lombardo y Elisa Cadoppi · Candidatos a Captains de Water 2027</footer>
+
+<script>
+/* ====== COMPLETAR ACÁ ====== */
+var CONFIG = {
+  // Google Form de destino (las respuestas llegan a su hoja de cálculo)
+  formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScSPTe-k7_ezNVwDkEShi9yk65BrWU9ilQ-VfZqUK0pYvAaKg/viewform",
+  formResponseUrl: "https://docs.google.com/forms/d/e/1FAIpQLScSPTe-k7_ezNVwDkEShi9yk65BrWU9ilQ-VfZqUK0pYvAaKg/formResponse",
+  entryPreferida: "entry.1292593743",
+  entryPropuesta: "entry.1914292716",
+  entryAspecto: "entry.1686782370",
+  // Fecha de votación en texto.
+  fecha: "23 de noviembre"
+};
+/* =========================== */
+(function(){
+  var alt=document.getElementById('formalt');
+  if(CONFIG.formUrl){
+    alt.innerHTML='¿No funciona? <a href="'+CONFIG.formUrl+'" target="_blank" rel="noopener">Abrilo en Google Forms</a>.';
+  }
+  var form=document.getElementById('ideaForm'),f1=document.getElementById('f1'),other=document.getElementById('other'),send=document.getElementById('send');
+  form.addEventListener('change',function(e){if(e.target.name==='q2'){other.hidden=e.target.value!=='__other_option__';if(!other.hidden)other.focus();}});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var txt=f1.value.trim(),okEl=document.getElementById('ok'),failEl=document.getElementById('fail'),e0=document.getElementById('e0');
+    okEl.hidden=true;failEl.hidden=true;
+    var s1=form.querySelector('input[name=q1]:checked');
+    e0.hidden=!!s1;
+    if(!s1){e0.scrollIntoView({block:'center',behavior:'smooth'});return;}
+    var d=new URLSearchParams();
+    d.append(CONFIG.entryPreferida,s1.value);
+    if(txt)d.append(CONFIG.entryPropuesta,txt);
+    var sel=form.querySelector('input[name=q2]:checked');
+    if(sel){d.append(CONFIG.entryAspecto,sel.value);if(sel.value==='__other_option__')d.append(CONFIG.entryAspecto+'.other_option_response',other.value.trim());}
+    d.append('fvv','1');d.append('pageHistory','0');
+    send.disabled=true;
+    fetch(CONFIG.formResponseUrl,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:d.toString()})
+      .then(function(){form.reset();other.hidden=true;okEl.hidden=false;})
+      .catch(function(){failEl.hidden=false;})
+      .then(function(){send.disabled=false;});
+  });
+  document.getElementById('fecha').textContent = CONFIG.fecha;
+})();
+
+(function(){
+  /* reveal on scroll */
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.15});els.forEach(function(el,n){el.style.transitionDelay=(n%3)*.08+'s';io.observe(el);});}
+  else els.forEach(function(el){el.classList.add('in');});
+  /* sticky CTA */
+  var st=document.getElementById('sticky'),hero=document.querySelector('.hero'),form=document.getElementById('idea');
+  function chk(){var y=window.scrollY,hh=hero.offsetHeight,f=form.getBoundingClientRect();st.classList.toggle('show',y>hh*0.8&&!(f.top<window.innerHeight*0.6&&f.bottom>0));}
+  window.addEventListener('scroll',chk,{passive:true});chk();
+})();
+</script>
+</body>
+</html>
